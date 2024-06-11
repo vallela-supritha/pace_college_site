@@ -1,0 +1,25 @@
+.login-container{
+    border-radius: 20%;
+  background: #0a0503;
+  padding: 50px;
+  opacity: 0.4;
+  width: 25%;
+ 
+}
+.submitBtn{
+    border-radius: 60%;
+    padding: 20px;
+    
+}
+.queryInp{
+    padding: 10px;
+    border-radius: 60%;
+}
+.mailInp{
+    padding: 10px;
+    border-radius: 60%;
+}
+.phoneInp{
+    padding: 10px;
+    border-radius: 60%;
+}

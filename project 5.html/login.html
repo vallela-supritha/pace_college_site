@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="logstyle.css">
+    <link rel="stylesheet" href="style.css">
+    
+    <style>
+        body{
+            background-image: url("bird.jpg");
+            background-size: cover;
+        }
+    </style>
+     <script>
+        // User Validations
+function loginValidation() {
+            // Ramesh
+  var uname = document.myform.username.value;
+             //Ramesh@123
+  var password = document.myform.password.value;
+            if(uname==null || uname=="") {
+              alert("Name cant be blank")
+              return false;  
+           } else if (password.length<6){
+              alert("Password Must be 6 letters")
+              return false;
+           }  
+           return true                 
+        }           
+     </script>
+</head>
+<body>
+    <header>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="login.html">About Us</a></li>
+                <li><a href="registration.html">Gallery</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+    <div class="login-container">
+        <h2>Login</h2>
+        
+
+        <form action="login successfull.html" onsubmit="return loginValidation(this)">
+          
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit">Login</button><br><br>
+            <p>don't have an account? 
+            <a href="reg.html" style="color: aliceblue;">register</a>  </p> 
+        </form>
+    </div>
+
+    </script>
+</body>
+</html>
